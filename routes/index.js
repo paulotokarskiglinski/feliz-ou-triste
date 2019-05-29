@@ -47,7 +47,7 @@ function treinarRedeNeural() {
       treinos.push({ input: f.frase, output: f.sentimento });
     });
 
-    net.train(treinos, { iterations: 200 });
+    net.train(treinos, { iterations: 100 });
   });
 }
 
