@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Feliz ou Triste?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Paulo Henrique Tokarski Glinski @paulotokarskiglinski">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1 text-black">Feliz ou Triste?</span>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="https://github.com/paulotokarskiglinski/feliz-ou-triste" class="btn btn-outline-dark" target="_blank" title="Abrir no GitHub">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <main class="container padding mx-auto">
+      <h1>
+        <% if (sentimento === 'feliz') { %>
+          <img src="images/feliz.png" alt="Feliz">
+        <% } else if (sentimento === 'triste') { %>
+          <img src="images/triste.png" alt="Triste">
+        <% } else { %>
+          <img src="images/indeterminado.png" alt="Indeterminado">
+        <% } %>
+      </h1>
+      <h2>"<%= frase %>"</h2>
+    
+      <br><br>
+      
+      <div class="row">
+        <form action="/" method="POST" class="input-group">
+          <div class="col-sm-12 col-md-9">
+            <input type="text" name="frase" class="form-control" placeholder="Digite uma frase aqui...">
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <button type="submit" class="btn btn-primary">Qual o sentimento?</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
