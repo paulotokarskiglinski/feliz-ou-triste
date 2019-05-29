@@ -7,7 +7,7 @@ const net = new brain.recurrent.LSTM();
 treinarRedeNeural();
 
 router.get('/', (req, res, next) => {
-  const frase = 'Estou muito feliz!';
+  const frase = 'Estou feliz';
 
   executarRedeNeural(frase).then((resultadoRedeNeural) => {
     res.render('index', { title: 'Express', frase: frase, sentimento: resultadoRedeNeural });
