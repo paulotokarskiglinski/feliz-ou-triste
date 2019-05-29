@@ -1,4 +1,4 @@
-# Feliz ou Troste?
+# Feliz ou Triste?
 
 Esta é uma aplicação que permite aos usuários saibam se a frase que digitaram possuí um sentimento "feliz" ou "triste".
 
